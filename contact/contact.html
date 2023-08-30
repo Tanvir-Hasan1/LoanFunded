@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="contact.css">
+     <title>Contact</title>
+</head>
+<body>
+     <div id="header">
+
+
+          <div id="header_logo">
+  
+              <div id="logo">
+                  <img src="images/dashboard_logo.png" alt="" height="80px">
+                  
+              </div>
+      
+              <label>Loan and Fund <br> Raising</label>
+  
+          </div>
+          
+  
+          <div id="header_btn_container">
+              <ul>
+                  <li>
+                      <a href="#"><button id="profile"></button></a>
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+    </div>
+  
+      <nav>
+          <ul>
+              <a href="../logged_dashboard/logged_dasboard.php"><li>Home</li></a>
+              <a href="#"><li>News</li></a>
+              <a href="../LoanReq/loanReq.html"><li>Request Loan</li></a>
+              <a href="#"><li>Donation</li></a>
+              <a href="#"><li>About</li></a>
+              <a href="../contact/contact.html"><li>Contact</li></a>
+  
+          </ul>
+      </nav>
+
+      <div class="contact_div">
+            <div >
+                <h1 class="contact_title">Contact</h1>
+            </div>
+      </div>
+
+      <div class="gx-main-content-wrapper">
+        <div class="ant-row">
+            <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-12 ant-col-xl-12">
+                <div class="ant-cart ant-cart-bordered">
+
+                </div>
+            </div>
+        </div>
+        <div id="main">
+        <div class="box1">
+            <h1 style="color: green; display: flex; justify-content: center;"> Contact Form</h1><br>
+            <form action="process.php" method="post">
+                
+                    <div class="form-group">
+                        <label for="name"><span class="required">*</span>Your name</label>
+                        <input type="text" name="name" placeholder="Your name" class="txn" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="Email"><span class="required">*</span>Your Email</label>
+                        <input type="text" name="email" placeholder="Your Email" class="txn" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="Subject"><span class="required">*</span>Subject</label>
+                        <input type="text" name="subject" placeholder="Subject" class="txn" required>
+                    </div>
+                
+                    <div class="form-group" style="display: flex;">
+                        <label for="message"><span class="required">*</span>Your Message</label>
+                        <br>
+                        <textarea id="message" name="message" cols="30" rows="10" class="txn" required></textarea>
+                    </div>
+                
+                    <button class="btn-sub" type="submit">Submit</button>
+                </form>
+                
+            </form>
+        </div>
+        <div class="box2">
+            <table>
+                <thead>
+                    Contact info
+                </thead>
+                <tr><td><Address></Address></td></tr>
+                <tr><td>United International university</td></tr>
+                <tr><td>Number</td></tr>
+                <tr><td>01761231109</td></tr>
+                <tr><td>Email</td></tr>
+                <tr><td>mahadishanto26@gmail.com</td></tr>
+            </table>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

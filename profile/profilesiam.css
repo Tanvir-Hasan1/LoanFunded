@@ -1,0 +1,165 @@
+body {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 500px;
+  width: 70%;
+  background-color: white;
+  margin-top:px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 150px;
+}
+
+.txn {
+
+  display: flex;
+  height: 30px;
+  margin-left: 30px;
+  font-size: large;
+  border-radius: 12px;
+  margin-top: 10px;
+
+
+
+}
+
+.txn:hover {
+  border: 1px solid rgb(2, 92, 2);
+  cursor: pointer;
+}
+
+.forgot {
+  color: rgb(3, 145, 3);
+  margin-left: 145px;
+
+
+
+
+}
+
+.forgot:hover {
+  text-decoration: underline;
+
+}
+
+.btn1 {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 12px;
+  height: 45px;
+  width: 380px;
+  background-color: rgb(248, 164, 8);
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+}
+
+.btn1:hover {
+  color: rgb(3, 145, 3);
+}
+
+.input-box {
+  position: relative;
+
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.input-box img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.status-bar {
+
+  background-color: #f0f0f0;
+  height: 100px;
+  width: 388px;
+  margin-left: 65px;
+  border-radius: 12px;
+
+}
+
+.status-box {
+  text-align: center;
+}
+
+#table_div {
+  margin-left: 50%;
+}
+
+.profile-image {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-left: 175px;
+}
+
+.div_color {
+  display: flex;
+  float: right;
+  margin-right: 60px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.profile-image {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-me {
+  margin-top: 10px;
+}
+
+.details {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details>div {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.status-box {
+  text-align: center;
+}
+
+.btn btn-success{
+  margin-left: 100%;
+}

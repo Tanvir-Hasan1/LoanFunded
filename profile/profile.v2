@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<style>
+  .profile-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  .profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .profile-header {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .about-me {
+    margin-top: 10px;
+  }
+
+  .details {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .details > div {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .details input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .status-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .status-box {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="profile-container">
+  <img class="profile-image" src="profile-image.jpg" alt="Profile Image">
+  <div class="profile-info">
+    <div class="profile-header">About Me</div>
+    <div class="about-me">
+      <p>A Lead UX & UI designer based in Canada</p>
+      <p>| Design and develop services for customers of all sizes,</p>
+      <p>specializing in creating stylish, modern websites, web</p>
+      <p>services, and online stores. My passion is to design</p>
+      <p>digital user experiences through bold interfaces and</p>
+      <p>meaningful interactions.</p>
+    </div>
+    <div class="details">
+      <div>
+        <input type="text" value="Birthday / 4th April 1998">
+        <input type="text" value="E-mail / info@domain.com">
+      </div>
+      <div>
+        <input type="text" value="Age / 25">
+        <input type="text" value="Phone / 820-885-3321">
+      </div>
+      <div>
+        <input type="text" value="Residence / Canada">
+        <input type="text" value="Skype / skype.0404">
+      </div>
+      <div>
+        <input type="text" value="Address / California, USA">
+        <input type="text" value="Freelance / Available">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="status-bar">
+  <div class="status-box">
+    <p>500</p>
+    <p>Happy Clients</p>
+  </div>
+  <div class="status-box">
+    <p>150</p>
+    <p>Projects Completed</p>
+  </div>
+  <div class="status-box">
+    <p>850</p>
+    <p>Photo Capture</p>
+  </div>
+  <div class="status-box">
+    <p>190</p>
+    <p>Telephonic Talk</p>
+  </div>
+</div>
+</body>
+</html>

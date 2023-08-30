@@ -1,0 +1,335 @@
+a{
+     text-decoration: none;
+ }
+ 
+ #header {
+     border-bottom: 1px solid black;
+     height: 12vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between; /* Add this line to evenly distribute items horizontally */
+ }
+ 
+ #header_logo{
+     display: flex;
+     align-items: center;
+ }
+ 
+ #header_btn_container ul {
+     margin-right: 20px;
+     list-style: none; /* Remove the default bullet points for the list items */
+     display: flex; /* Use flexbox to arrange the list items */
+ }
+ 
+ #header_btn_container li {
+     margin-left: 10px;
+ }
+ 
+ #header_btn_container button {
+     background-color: green;
+     border: none;
+     border-radius: 10px;
+     width: 85px;
+     height: 30px;
+     color: white;
+     font-weight: bold;
+     box-shadow: rgb(73, 197, 88) 0px 3px 8px;
+ 
+ }
+ 
+ #header_btn_container button a{
+     text-decoration: none;
+     color: white;
+ }
+ 
+ #header_btn_container button:hover{
+     background-color: rgb(60, 187, 81);
+     cursor: pointer;
+ }
+ #out{
+     
+     margin-left: 70%;
+     border-radius: 10px;
+     width: 85px;
+     height: 60px;
+ }
+ .logout{
+     border-radius: 10px;
+     width: 85px;
+     height: 60px;
+     color:green;
+ }
+ #header_btn_container button {
+     
+     align-items: center;
+     background-size: cover;
+     background-image: url("../Dashboard/images/profile-removebg-preview.png");
+     border: none;
+     border-radius: 10px;
+     width: 85px;
+     height: 60px;
+    
+     color: white;
+     font-weight: bold;
+     box-shadow: rgb(73, 197, 88) 0px 3px 8px;
+ 
+ }
+ nav{
+     height: 7vh;
+     background-color: green;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ nav ul{
+     width: 60%;
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+     
+ }
+ nav ul li{
+ 
+     color: white;
+     font-weight: bold;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+ }
+ 
+ nav ul li:hover{
+     color: black;
+     cursor: pointer;
+ }
+ 
+ 
+ #body{
+ 
+     background-color:aliceblue;
+ 
+ 
+ }
+ .main{
+     height: 500px;
+     width: 95%;
+    
+     display : flex ;
+     justify-content: space-evenly;
+     align-items: center;
+     
+     margin: 0 auto;
+ }
+ 
+ .left{
+     height: 500px;
+     width: 30%;
+     background-color: rgb(172, 186, 177);
+     float: left;
+     border-radius: 7px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+ .right{
+     height: 500px;
+     width: 30%;
+     background-color: rgb(172, 186, 177);
+     float: right;
+     border-radius: 7px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     overflow-y: auto;
+     flex-direction: column;
+ }
+ .center{
+     height: 500px;
+     width: 30%;
+     background-color: rgb(172, 186, 177);
+     float: left;
+     float: center;
+     border-radius: 7px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+ h3{
+     text-align: center;
+     margin-top: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 23px;
+     
+ }
+ hr {
+     border: none;
+     border-top: 1px solid rgb(16, 15, 15);
+     margin: 10px 0;
+     
+ }
+ .right button {
+     margin: 25px;
+     padding: 10px 20px;
+     background-color: #fff;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     width: 200px;
+     height: 70px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+ }
+ 
+ .right button:hover {
+     background-color: rgb(86, 183, 51);
+ }
+ #loanList, #campaignList {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     width: 90%; 
+     height: 400px;
+     margin: auto;
+     overflow: hidden;
+ }
+ #loanList:hover, #campaignList:hover {
+     
+     overflow-y:auto;
+ }
+ 
+ #loanList li, #campaignList li {
+     background-color: #edecf4;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     padding: 10px;
+     height: 80px;
+ }
+ 
+ 
+ footer{
+     background-color: aqua;
+ }
+
+.contact_div{
+     width: 100%; 
+     background-color: rgb(60, 187, 20); 
+     display: flex;
+     align-items: center; 
+     justify-content: center;
+     margin-top: 10px;
+}
+.contact_title{
+     color: rgb(255, 255, 255);
+     text-align: center;
+     font-size: 40_500;
+     display: flex;
+     padding-top: 0px;
+     padding-bottom: 0px;
+}
+.gx-main-content-wrapper{
+     width: 94vw;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 16px;
+     padding-right: 16px;
+}
+.ant-row{
+     margin-left: -16px;
+     margin-right: -16px;
+     display: -ms-flex;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+#main {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; /* Adjust the gap between the boxes */
+    
+    height: 600px;
+}
+
+.box1 {
+    margin-left:5%;
+    margin-top: 10px;
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px #efebeb;
+    order: 1;
+}
+label {
+    display: inline-block;
+    width: 120px; /* Adjust the width as needed */
+    text-align: right;
+    margin-right: 10px;
+    color: black; /* Set the label text color to black */
+}
+
+/* CSS for required asterisk */
+.required {
+    color: red; /* Set the asterisk color to red */
+    margin-right: 5px; /* Add some space between the asterisk and the label text */
+}
+
+/* CSS for input fields and textarea */
+.txn {
+    width: 200px; /* Adjust the width as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* CSS for the form layout */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* CSS for the submit button */
+.btn-sub {
+    background-color: green; /* Modify the button's background color */
+    color: white;  
+       padding: 10px 20px; /* Adjust padding as needed */
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       margin-left: 50%;
+       
+   }
+.box2{
+   margin-top: 20px;
+   margin-left: 400px;
+   width: 600px; /* Increased width */
+   background-color: white;
+   margin-bottom: 100px;
+   order: 2;
+   font-size: 24px;
+   line-height: 28px;
+   border-radius: 2px;
+   box-shadow: 0 0 0 2px #efebeb;
+   padding: 20px; /* Added padding to the box2 */
+}
+
+/* CSS for .box2 table */
+.box2 table {
+   width: 100%; /* Make the table width 100% */
+   border-collapse: collapse; /* Collapse table borders */
+}
+
+/* CSS for .box2 thead */
+.box2 thead {
+   background-color: #f9f9f9; /* Light gray background color for thead */
+}
+
+/* CSS for .box2 th */
+.box2 th {
+   font-weight: bold;
+   text-align: left;
+   padding: 10px;
+}
+
+/* CSS for .box2 td */
+.box2 td {
+   padding: 10px;
+}

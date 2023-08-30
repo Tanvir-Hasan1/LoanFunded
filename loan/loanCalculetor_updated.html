@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: green;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: yellow;
+            color: black;
+            font-size: large;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pay Loan</h2>
+        <form action="loan.php" method="post">
+            <div class="form-group">
+                <label for="amount">Bkash/Nagad:</label>
+                <input type="" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="number" id="loanAmount" name="loanAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <input type="text" id="interestRate" name="interestRate" required value="2%">
+            </div>
+            <div class="form-group">
+                <label for="loanTerm">Loan Term (monthlyInterest):</label>
+                <input type="number" id="loanTerm" required>
+            </div>
+            <div class="form-group">
+                <button type="button" id="calculateButton">Calculate</button>
+                <div id="result"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">University Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="purpose">Payment Gateway:</label>
+                <input type="text" id="purpose" name="purpose" required>
+            </div>
+            <button type="submit">Payment</button>
+        </form>
+    </div>
+    <script>
+        const calculateButton = document.getElementById('calculateButton');
+        const resultDiv = document.getElementById('result');
+    
+        calculateButton.addEventListener('click', () => {
+            const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value) / 100;
+            const loanTermYears = parseInt(document.getElementById('loanTerm').value);
+            const loanTermMonths = loanTermYears * 12;
+    
+            const monthlyInterest = interestRate / 12;
+            const denominator = Math.pow(1 + monthlyInterest, -loanTermMonths);
+            const monthlyPayment = (loanAmount * monthlyInterest) / (1 - denominator);
+            
+            const totalAmount = monthlyPayment * loanTermMonths;
+    
+            // Format amounts with Taka symbol
+            const formattedMonthlyPayment = `৳${monthlyPayment.toFixed(2)}`;
+            const formattedTotalAmount = `৳${totalAmount.toFixed(2)}`;
+    
+            resultDiv.innerHTML = `<p>Monthly Payment: ${formattedMonthlyPayment}</p>`;
+            resultDiv.innerHTML += `<p>Total Amount Paid: ${formattedTotalAmount}</p>`;
+        });
+    </script>
+</body>
+</html>

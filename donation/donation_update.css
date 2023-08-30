@@ -1,0 +1,160 @@
+a{
+    text-decoration: none;
+}
+
+#header {
+    border-bottom: 1px solid black;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this line to evenly distribute items horizontally */
+}
+
+#header_logo{
+    display: flex;
+    align-items: center;
+}
+
+#header_btn_container ul {
+    margin-right: 20px;
+    list-style: none; /* Remove the default bullet points for the list items */
+    display: flex; /* Use flexbox to arrange the list items */
+}
+
+#header_btn_container li {
+    margin-left: 10px;
+}
+#out{
+    
+    margin-left: 70%;
+    border-radius: 10px;
+    width: 85px;
+    height: 60px;
+}
+.logout{
+    border-radius: 10px;
+    width: 85px;
+    height: 60px;
+    color:green;
+}
+
+#header_btn_container button {
+    align-items: center;
+    background-size: cover;
+    background-image: url("../Dashboard/images/profile-removebg-preview.png");
+    border: none;
+    border-radius: 10px;
+    width: 85px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgb(73, 197, 88) 0px 3px 8px;
+
+}
+
+#header_btn_container button a{
+    text-decoration: none;
+    color: white;
+}
+
+#header_btn_container button:hover{
+    cursor: pointer;
+}
+
+nav{
+    height: 7vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+nav ul li{
+
+    color: white;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+nav ul li:hover{
+    color: black;
+    cursor: pointer;
+}
+#box{
+    margin-top: 2%;
+    background-color: rgb(254, 254, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 35%;
+    margin-left: 33%;
+    border: transparent;
+    border-radius: 15px;
+    box-shadow: 1px 3px 8px 8px rgba(0, 0, 0, 0.2);
+  }
+  .top{
+    background-color: whitesmoke;
+    height: 225px;
+    width: 520px;
+  }
+  h1{
+    margin-left: 40px;
+  }
+  /* This assumes you have a table with a <thead> element */
+  h3{
+  margin-left: 25%;
+    font-size: xx-large;
+    justify-content: center;
+    
+    
+  }
+  .img{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+   
+    border-radius: 10px;
+   
+    
+  }
+  .des{
+    
+    
+  }
+  .btn-donate{
+    margin-left: 45%;
+    color: white;
+    height: 35px;
+    width: 80px;
+    background-color: rgba(0, 128, 0, 0.703);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: larger; 
+    
+  }
+  
+  .btn-donate:hover{
+    background-color: green;
+    cursor: pointer;
+  
+  }
+  .btn-donate {
+    text-decoration: none !important;
+    /* Other styles */
+  }
+  
+  .foot{
+    background-color: aliceblue;
+  }

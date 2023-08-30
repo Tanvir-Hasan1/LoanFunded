@@ -1,0 +1,187 @@
+a{
+    text-decoration: none;
+}
+
+#header {
+    border-bottom: 1px solid black;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this line to evenly distribute items horizontally */
+}
+
+#header_logo{
+    display: flex;
+    align-items: center;
+}
+
+#header_btn_container ul {
+    margin-right: 20px;
+    list-style: none; /* Remove the default bullet points for the list items */
+    display: flex; /* Use flexbox to arrange the list items */
+}
+
+#header_btn_container li {
+    margin-left: 10px;
+}
+
+#header_btn_container button {
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    width: 85px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgb(73, 197, 88) 0px 3px 8px;
+
+}
+
+#header_btn_container button a{
+    text-decoration: none;
+    color: white;
+}
+
+#header_btn_container button:hover{
+    background-color: rgb(60, 187, 81);
+    cursor: pointer;
+}
+
+nav{
+    height: 7vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+nav ul li{
+
+    color: white;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+nav ul li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+#body{
+
+    background-color:aliceblue;
+
+
+}
+
+#title{
+
+display: flex;
+justify-content: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#campaign{
+
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+
+}
+
+#campaign ol{
+    list-style: none;
+}
+
+#grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 2%; /* Gap between grid items */
+    padding: 2%; /* Optional padding around the grid */
+    
+}
+.items{
+
+    background-color: rgba(192, 138, 138, 0.316);
+    border-radius: 10px;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.items{
+    cursor: pointer;
+
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 28vh;
+}
+.items button{
+    height: 100%;
+    width: 30%;
+    background-color: rgba(0, 128, 0, 0.703);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}
+
+.items button:hover{
+   background-color: green;
+    
+}
+
+.items #btn_donate{
+    margin-top: 3%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: aqua;
+}
